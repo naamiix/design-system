@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/**
+UI KIT : COLOR & SPACING
+**/
+body{
+  --primary-color : #281A6A;
+  --secondary-color : #FFDFD0;
+  --unvalid-color : #BD2525;
+  --white-color : #ffffff;
+  --main-font : 'Nunito Sans', sans-serif;
+  --spacing-1 : 8px;
+  --spacing-2 : 16px;
+  --spacing-3 : 36px;
+  --spacing-4 : 48px;
+  --spacing-5 : 64px;
+}
+
+
+/**
+UI KIT : TEXTES
+**/
+h1{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 45px;
+  color: var(--primary-color);
+}
+
+h2{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--primary-color);
+}
+
+h3{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+}
+
+.body_txt{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+}
+
+.txt_description{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 275;
+  font-size: 13.5px;
+  line-height: 18px;
+  color: var(--primary-color);
+}
+
+.button_txt{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+
+/**
+UI KIT : Input
+**/
+div.inputs{
+display: flex;
+flex-direction: column;
+margin-top: var(--spacing-5);
+}
+
+div.inputs label{
+  margin-bottom: var(--spacing-1);
+}
+
+div.inputs input{
+  height: 27px;
+  width: 335px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 0.5px solid var(--primary-color);
+}
+
+div.inputs_valid input{
+  background-image: url("assets/valid.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+div.inputs_unvalid input{
+  background-image: url("assets/unvalid.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  border-bottom: 0.5px solid var(--unvalid-color);
+}
+
+/**
+UI KIT : Buttons 
+**/
+.button_default{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 8px 32px;
+  margin-top: var(--spacing-4);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  transition: background-color 0.25s ease-in;
+}
+
+.button_default:hover{
+  background: #201554;
+}
+
+.button_active{
+  background-color: #0F092A;
+}
+
+.button_focus{
+  border: 2px solid #7BD0FF;
+}
+
+.button_disabled{
+  opacity: 0.45;
+}
+
+/**
+Main CSS
+**/
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  height: 100vh;
+}
+
+section.visual{
+  width: 40vw;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+section.visual div{
+  text-align: right;
+  margin-right: var(--spacing-3);
+}
+
+section.form{
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.form h1{
+  margin-left: calc(var(--spacing-5)*2);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(var(--spacing-5)*1);
+}
+
+
+
+

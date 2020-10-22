@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bank Inc - Sign in</title>
+    <link href="style_signup.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="visual">
+      <div>
+        <img src="assets/logo.svg" alt="">
+        <h2>The new generation banking</h2>
+        <h3>Create your account in less than 4 minutes with 0 additional costs.</h3>
+      </div>
+    </section>
+    <section class="form">
+      <form action="index.html" method="post">
+        <h1>Sign up</h1>
+        <p class="body_txt">Already have an account ? <a class="accentuation" href="index.html">Sign in</a></p>
+        <div class="inputs">
+            <label class="txt_description" for="first-name-input">First name</label>
+            <input class="body_txt"type="text" placeholder="Joëlla" name="first-name" required>
+        </div>
+        <div class="inputs">
+            <label class="txt_description" for="last-name-input">Last name</label>
+            <input class="body_txt" type="text" name="last-name" required>
+        </div>
+        <div class="inputs">
+          <label class="txt_description" for="email-input">Email</label>
+          <input class="body_txt" type="email" name="email" required>
+        </div>
+        <div class="inputs">
+          <label class="txt_description" for="password-input">Password</label>
+          <input class="body_txt" id="password-input" type="password" name="password" required>
+        </div>
+        <!--
+        <div class="inputs">
+            <label class="txt_description" for="password-confirm-input">Comfirm password</label>
+            <input class="body_txt" id="password-input" type="password" name="confirm-password" required>
+        </div>
+        -->
+        <div class="inputs">
+            <label class="txt_description" for="phone-input">Phone number</label>
+            <input class="body_txt" id="phone-input" type="tel" name="phone" required>
+        </div>
+        <input type="submit" class='button_default button_txt js-submit-login-button' value="Confirm" >
+        <p class="txt_description">By clicking Confirm, you accept our <a class="accentuation" href="#">privacy policy</a> applicable to the processing of your personal data.</p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js" ></script>
+</body>
+</html>

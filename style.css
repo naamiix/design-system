@@ -214,6 +214,10 @@ form{
   flex-direction: column;
 }
 
+form p{
+  margin-top: var(--spacing-3);
+}
+
 form h4{
   margin-top: var(--spacing-3);
   text-align: right;
@@ -225,10 +229,6 @@ form h4:hover{
   transition: var(--transition-base);
 }
 
-form p{
-  margin-top: var(--spacing-5);
-  text-align: center;
-}
 
 form a{
   text-decoration: none;

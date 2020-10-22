@@ -9,15 +9,21 @@ UI KIT : COLOR & SPACING
 **/
 body{
   --primary-color : #281A6A;
-  --secondary-color : #FFDFD0;
+  --secondary-color : #FF825E;
   --unvalid-color : #BD2525;
   --white-color : #ffffff;
   --main-font : 'Nunito Sans', sans-serif;
   --spacing-1 : 8px;
   --spacing-2 : 16px;
-  --spacing-3 : 36px;
-  --spacing-4 : 48px;
-  --spacing-5 : 64px;
+  --spacing-3 : 24px;
+  --spacing-4 : 36px;
+  --spacing-5 : 48px;
+  --spacing-6 : 64px;
+  --transition-base : all 0.3s ease-out;
+  background-image: url('assets/illustrationCards.png'), linear-gradient(#FFDFD0, #FFF4EF);
+  background-position: top left;
+  background-repeat: no-repeat;
+
 }
 
 
@@ -27,22 +33,31 @@ UI KIT : TEXTES
 h1{
   font-family: var(--main-font);
   font-style: normal;
-  font-weight: bold;
-  font-size: 33px;
-  line-height: 45px;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61px;
   color: var(--primary-color);
 }
 
 h2{
   font-family: var(--main-font);
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 45px;
   color: var(--primary-color);
 }
 
 h3{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 31px;
+  color: var(--primary-color);
+}
+
+h4{
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
@@ -80,6 +95,11 @@ h3{
   color: var(--primary-color);
 }
 
+.accentuation{
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
 
 /**
 UI KIT : Input
@@ -87,7 +107,7 @@ UI KIT : Input
 div.inputs{
 display: flex;
 flex-direction: column;
-margin-top: var(--spacing-5);
+margin-top: var(--spacing-6);
 }
 
 div.inputs label{
@@ -120,27 +140,25 @@ div.inputs_unvalid input{
 UI KIT : Buttons 
 **/
 .button_default{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--white-color);
   padding: 8px 32px;
-  margin-top: var(--spacing-4);
+  margin-top: var(--spacing-6);
   border: none;
   cursor: pointer;
   border-radius: 4px;
 
-  transition: background-color 0.25s ease-in;
+  transition: var(--transition-base);
 }
 
 .button_default:hover{
-  background: #201554;
-}
-
-.button_active{
-  background-color: #0F092A;
+  background: var(--white-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color) ;
 }
 
 .button_focus{
-  border: 2px solid #7BD0FF;
+  box-shadow: 0px 0px 8px var(--secondary-color);
 }
 
 .button_disabled{
@@ -160,35 +178,66 @@ section{
 }
 
 section.visual{
-  width: 40vw;
-  background-color: var(--secondary-color);
+  width: 50vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 section.visual div{
   text-align: right;
-  margin-right: var(--spacing-3);
+  width: 444px;
+  margin-right: calc((var(--spacing-6)*2) + var(--spacing-2));
+}
+
+section.visual div img{
+  margin-bottom: var(--spacing-4);
+}
+
+section.visual div h2{
+  margin-bottom: var(--spacing-6);
 }
 
 section.form{
-  width: 60vw;
+  background-color: var(--white-color);
+  border-radius: 63px 0px 0px 63px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.09);
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-section.form h1{
-  margin-left: calc(var(--spacing-5)*2);
+  align-items: center;
 }
 
 form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: calc(var(--spacing-5)*1);
+}
+
+form h4{
+  margin-top: var(--spacing-3);
+  text-align: right;
+  cursor: pointer;
+}
+
+form h4:hover{
+  text-decoration: underline;
+  transition: var(--transition-base);
+}
+
+form p{
+  margin-top: var(--spacing-5);
+  text-align: center;
+}
+
+form a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form a:hover{
+  text-decoration: underline;
+  transition: var(--transition-base);
 }
 
 

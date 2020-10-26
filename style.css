@@ -5,7 +5,7 @@
 
 
 /**
-UI KIT : COLOR & SPACING
+COLOR & SPACING
 **/
 body{
   --primary-color : #281A6A;
@@ -23,19 +23,18 @@ body{
   background-image: url('assets/illustrationCards.png'), linear-gradient(#FFDFD0, #FFF4EF);
   background-position: top left;
   background-repeat: no-repeat;
-
 }
 
 
 /**
-UI KIT : TEXTES
+STYLES DE TEXTES
 **/
 h1{
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 800;
   font-size: 45px;
-  line-height: 61px;
+  line-height: 49px;
   color: var(--primary-color);
 }
 
@@ -102,12 +101,12 @@ h4{
 
 
 /**
-UI KIT : Input
+COMPONENTS INPUTS
 **/
 div.inputs{
 display: flex;
 flex-direction: column;
-margin-top: var(--spacing-6);
+margin-top: var(--spacing-4);
 }
 
 div.inputs label{
@@ -136,8 +135,14 @@ div.inputs_unvalid input{
   border-bottom: 0.5px solid var(--unvalid-color);
 }
 
+div.inputs.unsee{
+  background-image: url("assets/unsee.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 /**
-UI KIT : Buttons 
+COMPONENTS BUTTONS
 **/
 .button_default{
   background-color: var(--secondary-color);
@@ -147,6 +152,7 @@ UI KIT : Buttons
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  width: 100%;
 
   transition: var(--transition-base);
 }
@@ -165,80 +171,7 @@ UI KIT : Buttons
   opacity: 0.45;
 }
 
-/**
-Main CSS
-**/
-main{
-  display: flex;
-  flex-direction: row;
-}
 
-section{
-  height: 100vh;
-}
-
-section.visual{
-  width: 50vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-section.visual div{
-  text-align: right;
-  width: 444px;
-  margin-right: calc((var(--spacing-6)*2) + var(--spacing-2));
-}
-
-section.visual div img{
-  margin-bottom: var(--spacing-4);
-}
-
-section.visual div h2{
-  margin-bottom: var(--spacing-6);
-}
-
-section.form{
-  background-color: var(--white-color);
-  border-radius: 63px 0px 0px 63px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.09);
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-}
-
-form p{
-  margin-top: var(--spacing-3);
-}
-
-form h4{
-  margin-top: var(--spacing-3);
-  text-align: right;
-  cursor: pointer;
-}
-
-form h4:hover{
-  text-decoration: underline;
-  transition: var(--transition-base);
-}
-
-
-form a{
-  text-decoration: none;
-  cursor: pointer;
-}
-
-form a:hover{
-  text-decoration: underline;
-  transition: var(--transition-base);
-}
 
 
 

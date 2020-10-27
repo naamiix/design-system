@@ -167,8 +167,9 @@ COMPONENTS BUTTONS
   background-color: #DB5B44;
 }
 
-.button_focus{
+.button_default:focus{
   box-shadow: 0px 0px 8px var(--secondary-color);
+  outline: none;
 }
 
 .button_disabled{
